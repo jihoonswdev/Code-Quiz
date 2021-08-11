@@ -1,8 +1,135 @@
-#Starting {
-    width: 70%;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  background-color: rgb(48, 49, 51);
 }
 
-#quiz {
-    display: none;
+#top {
+  color: rgb(255, 1, 1);
 }
 
+.top-position {
+  position: absolute;
+}
+
+#a {
+  top: 0;
+  left: 0.5%;
+}
+
+#high-scores {
+  top: 5;
+  left: 2%;
+}
+
+#countDown {
+  float: right;
+  color: red;
+}
+
+#wrapper {
+  position: absolute;
+  text-align: center;
+  left: 325px;
+  top: 25%;
+  width: 600px;
+  height: 300px;
+  border: 3px solid rgb(87, 211, 30);
+}
+
+#questionScreen {
+  margin: 5px auto;
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#paragraph {
+  text-align: center;
+}
+
+#startTime {
+  background-color: rgb(255, 1, 1);
+  margin-left: 5%;
+  padding: 15px 32px;
+  font-size: 20px;
+  color: white;
+}
+
+#goBack {
+  background-color: rgb(255, 1, 1);
+  position: relative;
+  padding: 25px;
+  font-size: 20px;
+  color: white;
+  top: 30%;
+  left: 55%;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+#clear {
+  background-color: rgb(255, 1, 1);
+  position: relative;
+  padding: 25px;
+  font-size: 20px;
+  color: white;
+  top: 30%;
+  right: 30%;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+}
+
+textarea {
+  width: 90%;
+  margin: 20px;
+}
+
+#Submit {
+  background-color: rgb(255, 1, 1);
+  margin-left: 2%;
+  padding: 15px 32px;
+  font-size: 20px;
+  color: white;
+}
+
+label {
+  margin-right: 10px;
+}
+input {
+  margin-bottom: 20px;
+  width: 50%;
+  border: 1px solid lightgray;
+}
+
+li {
+  background-color: rgb(43, 128, 57);
+  margin-top: 10px;
+  padding: 5px 15px;
+  width: 80%;
+  font-size: 18px;
+  color: white;
+}
+
+#createDiv {
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
+}
+
+#goBack {
+  position: relative;
+  left: 50%;
+}
+
+#clear {
+  position: relative;
+  right: 35%;
+}

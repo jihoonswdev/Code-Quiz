@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
-    <link rel = "stylesheet" href = "./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
     <title>Code Quiz</title>
-</head>
-    <div class ="row">
-        <div class = "col-md-4 h2" id = "viewHighScore">HighScore</div>
-        <div class = "col-md-2 ml-auto-h2">
-            "time: "
-            <span id = "timer">0</span>
-        </div>
-    </div>
+  </head>
 
+  <body>
+    <header id="top">
+      <div id="high-scores" class="top-position">
+        <a undefined="undefined" href="highscores.html">HighScore</a>
+      </div>
 
-    <div class = "container" id= "Starting" style="display: block;">
-        <h1 class = "h1 mb-4">Coding Quiz Challenge</h1>
-        <p class = "h1 mb-4">
-            "Try to answer the following code-related questions within the time limit.
-            Keep in mind that incorrect answers will penalize your scoretime by "ten seconds"!"
+      <div id="countDown"></div>
+    </header>
+
+    <div id="wrapper">
+      <div id="questionScreen">
+        <h1 id="h1">Coding Quiz Challenge</h1>
+        <p id="Paragraph">
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by ten seconds!
         </p>
-        <button type = "button" class = "button" id = "startQuiz">Start Quiz</button>
+        <ul id="choicesUl"></ul>
+        <button id="startTime">Start Quiz</button>
+      </div>
     </div>
-<body>
-    
-</body>
+
+    <script src="./assets/script/script.js"></script>
+  </body>
 </html>
