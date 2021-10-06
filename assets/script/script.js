@@ -4,7 +4,6 @@ var currentQuestionIndex = 0;
 var countDown = document.querySelector("#countDown");
 var timer = document.querySelector("#startTime");
 var questionScreen = document.querySelector("#questionScreen");
-var wrapper = document.querySelector("#wrapper");
 
 var secondsLeft = 60;
 var holdInterval = 0;
@@ -173,30 +172,4 @@ function allDone() {
   createSubmit.textContent = "Submit";
 
   questionScreen.appendChild(createSubmit);
-
-  // Capture initials and local storage for initials and score
-  createSubmit.addEventListener("click", function () {
-    var initials = createInput.value;
-
-    if (initials === null) {
-      console.log("No value entered!");
-    } else {
-      var finalScore = {
-        initials: initials,
-        score: timeRemaining,
-      };
-      console.log(finalScore);
-      var allScores = localStorage.getItem("allScores");
-      if (allScores === null) {
-        allScores = [];
-      } else {
-        allScores = JSON.parse(allScores);
-      }
-      allScores.push(finalScore);
-      var newScore = JSON.stringify(allScores);
-      localStorage.setItem("allScores", newScore);
-      // Goes to final page
-      window.location.replace("./highscores.html");
-    }
-  });
 }

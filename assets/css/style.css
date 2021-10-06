@@ -27,16 +27,6 @@ body {
   color: red;
 }
 
-#wrapper {
-  position: absolute;
-  text-align: center;
-  left: 325px;
-  top: 25%;
-  width: 600px;
-  height: 300px;
-  border: 3px solid rgb(87, 211, 30);
-}
-
 #questionScreen {
   margin: 5px auto;
   text-align: center;
@@ -58,30 +48,6 @@ h1 {
   padding: 15px 32px;
   font-size: 20px;
   color: white;
-}
-
-#goBack {
-  background-color: rgb(255, 1, 1);
-  position: relative;
-  padding: 25px;
-  font-size: 20px;
-  color: white;
-  top: 30%;
-  left: 55%;
-  width: auto;
-  text-align: center;
-  text-decoration: none;
-}
-
-#clear {
-  background-color: rgb(255, 1, 1);
-  position: relative;
-  padding: 25px;
-  font-size: 20px;
-  color: white;
-  top: 30%;
-  right: 30%;
-  text-align: center;
 }
 
 button {
@@ -122,14 +88,4 @@ li {
 #createDiv {
   margin-top: 20px;
   border-top: 1px solid lightgray;
-}
-
-#goBack {
-  position: relative;
-  left: 50%;
-}
-
-#clear {
-  position: relative;
-  right: 35%;
 }
